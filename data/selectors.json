@@ -1,0 +1,20 @@
+{
+  "label": ".ant-form-item-required",
+  "labelFive": ".ant-form-item-label",
+  "name": "#name",
+  "gender": ".ant-radio",
+  "age": "#age",
+  "story": "#story",
+  "create": ".ant-btn",
+  "story2":".ant-select-selector",
+  "storyArrow": ".ant-select-show-arrow",
+  "storyTitle": ".ant-select-item-option",
+  "namePlaceholder": ".ant-input",
+  "agePlaceholder": ".ant-input-number-input",
+  "genderPlaceholder":".ant-radio-wrapper",
+  "storyPlaceholder": ".ant-select-selection-placeholder",
+  "imagePlaceholder": ".ant-upload",
+  "createPlaceholder":".ant-btn",
+  "tryAgainButton": ".btn-primary"
+}
+
