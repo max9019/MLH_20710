@@ -1,0 +1,11 @@
+{
+  "name": "#name",
+  "gender": ".ant-radio",
+  "age": "#age",
+  "story": ".ant-select-selector",
+  "picture": ".ant-upload",
+  "storyClick": ".ant-select-show-arrow",
+  "storyType": ".ant-select-item-option",
+  "button": ".ant-btn",
+  "tryAgain": ".btn-primary"
+}
