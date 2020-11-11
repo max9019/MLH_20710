@@ -3,9 +3,9 @@ const exp = require('../../data/expected.json');
 const data = require('../../data/testData.json');
 const inputValues4AndClick = require('../../helpers/inputValues4AndClick');
 const inputValues5AndClick = require('../../helpers/inputValues5AndClick');
-const uploadSmallJPGimage = require('../../helpers/uploadSmallJPGimage');
 
-describe('Checking Create Button - Smoke', function () {
+
+describe('MLH-484 Labels for Create Button', function () {
 
     it('TCB-001 Create button is present', function () {
         browser.url('');
@@ -18,6 +18,10 @@ describe('Checking Create Button - Smoke', function () {
         const text = $(sel.button).getText();
         expect(text).toEqual(exp.buttonPlaceholder);
     });
+
+});
+
+describe('MLH-484 Create Button - Smoke', function () {
 
     it('TCB-003 Button disabled when all fields empty', function () {
         browser.url('');
