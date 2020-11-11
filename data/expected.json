@@ -1,3 +1,8 @@
 {
+  "labelPicture": "5. Upload an image (optional)",
+  "picturePlaceholder": "Click or drag and drop",
+  "jpgPreview": "Test_JPG_152_KB.jpg",
+  "pngPreview": "Test_PNG_94_KB.png",
+  "imageError": "/static/error.86e8f937.png",
   "buttonPlaceholder": "Create!"
 }

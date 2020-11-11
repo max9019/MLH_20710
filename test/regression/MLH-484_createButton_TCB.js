@@ -1,11 +1,8 @@
 const sel = require('../../data/selectors.json');
-const exp = require('../../data/expected.json');
 const data = require('../../data/testData.json');
-const inputValues4AndClick = require('../../helpers/inputValues4AndClick');
-const inputValues5AndClick = require('../../helpers/inputValues5AndClick');
 const uploadSmallJPGimage = require('../../helpers/uploadSmallJPGimage');
 
-describe('Checking Create Button - Regression', function () {
+describe('MLH-484 Create Button - Regression', function () {
 
     it('TCB-004 Disabled when only name entered', function () {
         browser.url('');

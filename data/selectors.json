@@ -1,4 +1,5 @@
 {
+  "label": ".ant-form-item-label",
   "name": "#name",
   "gender": ".ant-radio",
   "age": "#age",
@@ -7,5 +8,9 @@
   "storyClick": ".ant-select-show-arrow",
   "storyType": ".ant-select-item-option",
   "button": ".ant-btn",
-  "tryAgain": ".btn-primary"
+  "tryAgain": ".btn-primary",
+  "uploadedPicture": ".mb-2",
+  "imagePreviewName": ".ant-upload-list-item-name",
+  "imagePreviewDelete": ".anticon-delete",
+  "imagePreview": ".ant-upload-list-item-info"
 }
