@@ -2,6 +2,7 @@ const sel = require('../../data/selectors.json');
 const exp = require('../../data/expected.json');
 const data = require('../../data/testData.json');
 const inputValues5AndClick = require('../../helpers/inputValues5AndClick');
+const inputValues4AndClick = require('../../helpers/inputValues4AndClick');
 
 describe('MLH-543 Page header is present and correct  ', function() {
 
@@ -21,6 +22,13 @@ describe('MLH-543 Page header is present and correct  ', function() {
         const uploadedPictureSize = $(sel.uploadedPicture).getAttribute('width');
         const toNumber = parseInt(uploadedPictureSize, 10);
         expect(toNumber).toBeLessThanOrEqual(500);
+    });
+
+    it('TCS-005 have default image on the story', function (){
+        browser.url('');
+        inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
+        const uploadedPicture = $(sel.uploadedPicture).getAttribute('src');
+        expect(uploadedPicture).toContain('app/static');
     });
 
 })
