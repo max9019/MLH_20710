@@ -1,5 +1,7 @@
 const sel = require('../../data/selectors.json');
 const exp = require('../../data/expected.json');
+const data = require('../../data/testData.json');
+const inputValues5AndClick = require('../../helpers/inputValues5AndClick');
 
 describe('MLH-543 Page header is present and correct  ', function() {
 
@@ -13,7 +15,12 @@ describe('MLH-543 Page header is present and correct  ', function() {
         const headerMLH = $(sel.headerMLH).getText();
         expect(headerMLH).toEqual(exp.headerMLH);
     });
-
-
+//TCS-003 unresolved yet
+    it('TCS-004 uploaded image has size <=500px', function (){
+        inputValues5AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
+        const uploadedPictureSize = $(sel.uploadedPicture).getAttribute('width');
+        const toNumber = parseInt(uploadedPictureSize, 10);
+        expect(toNumber).toBeLessThanOrEqual(500);
+    });
 
 })
