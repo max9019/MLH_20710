@@ -12,5 +12,6 @@
   "uploadedPicture": ".mb-2",
   "imagePreviewName": ".ant-upload-list-item-name",
   "imagePreviewDelete": ".anticon-delete",
-  "imagePreview": ".ant-upload-list-item-info"
+  "imagePreview": ".ant-upload-list-item-info",
+  "headerMLH": ".hero__form h3"
 }
