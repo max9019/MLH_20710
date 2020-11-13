@@ -14,5 +14,6 @@
   "imagePreviewDelete": ".anticon-delete",
   "imagePreview": ".ant-upload-list-item-info",
   "headerMLH": ".hero__form h3",
-  "headerStory": ".mb-4"
+  "headerStory": ".mb-4",
+  "storyText": ".card-text"
 }

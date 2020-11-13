@@ -3,6 +3,7 @@ const exp = require('../../data/expected.json');
 const data = require('../../data/testData.json');
 const inputValues5AndClick = require('../../helpers/inputValues5AndClick');
 const inputValues4AndClick = require('../../helpers/inputValues4AndClick');
+const storyAgeText = require('../../helpers/storyAgeText');
 
 describe('MLH-543 Page header is present and correct  ', function() {
 
@@ -36,6 +37,12 @@ describe('MLH-543 Page header is present and correct  ', function() {
         inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
         const headerStory = $(sel.headerStory).getText();
         expect(headerStory).toStrictEqual(exp.headerStory);
+    });
+
+    it('TCS-007 the story has age written in words', function (){
+        browser.url('');
+        inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
+        expect(storyAgeText()).toEqual(exp.storyAge);
     });
 
 })
