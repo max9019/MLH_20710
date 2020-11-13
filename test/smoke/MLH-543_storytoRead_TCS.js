@@ -36,7 +36,7 @@ describe('MLH-543 Page header is present and correct  ', function() {
         browser.url('');
         inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
         const headerStory = $(sel.headerStory).getText();
-        expect(headerStory).toStrictEqual(data.headerStory);
+        expect(headerStory).toStrictEqual(exp.headerStory);
     });
 
     it('TCS-007 the story has age written in words', function (){
