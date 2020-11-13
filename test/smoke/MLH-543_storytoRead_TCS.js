@@ -31,4 +31,11 @@ describe('MLH-543 Page header is present and correct  ', function() {
         expect(uploadedPicture).toContain('app/static');
     });
 
+    it('TCS-006 the header of the story is in capital letters', function (){
+        browser.url('');
+        inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
+        const headerStory = $(sel.headerStory).getText();
+        expect(headerStory).toStrictEqual(exp.headerStory);
+    });
+
 })
