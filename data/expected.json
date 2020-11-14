@@ -7,5 +7,7 @@
   "buttonPlaceholder": "Create!",
   "headerMLH": "My Little Hero",
   "storyAge": "one hundred twenty three",
-  "headerStory": "Two Cats And A LadyBug"
+  "headerStory": "Two Cats And A LadyBug",
+  "labelAge": "3. How old is your hero?",
+  "placeholderAge": "Hero's age"
 }
