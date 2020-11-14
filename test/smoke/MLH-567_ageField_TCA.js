@@ -11,7 +11,7 @@ describe('MLH-567 field age tests', function () {
 
     it('TCA-002 Label for age = 3. How old is your hero?', function () {
         browser.url('');
-        const text = $$(sel.label)[2].getAttribute('title');
+        const text = $$(sel.label)[2].getText();
         expect(text).toEqual(exp.labelAge);
     });
 
