@@ -72,10 +72,8 @@ describe('MLH-543 Final Story Testing  ', function() {
         inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
         $(sel.tryAgain).waitForDisplayed();
         $(sel.tryAgain).click();
-        const theIntro = $(sel.theIntro).getAttribute('textContent');
-        console.log("iiii" + theIntro);
-
+        const theIntroText = $(sel.theIntro).isDisplayed();
+        expect(theIntroText).toEqual(true);
     });
-
 
 })
