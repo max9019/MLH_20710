@@ -17,7 +17,7 @@ describe('MLH-543 Final Story Testing  ', function() {
         const headerMLH = $(sel.headerMLH).getText();
         expect(headerMLH).toEqual(exp.headerMLH);
     });
-//TCS-003 unresolved yet
+//TCS-003 unresolved yett
     it('TCS-004 uploaded image has size <=500px', function (){
         inputValues5AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
         const uploadedPictureSize = $(sel.uploadedPicture).getAttribute('width');
