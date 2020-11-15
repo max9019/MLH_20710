@@ -1,20 +1,13 @@
 {
-  "labelName": "1. What is your Hero's name?",
-  "labelGender": "2. Please choose a gender.",
-  "labelAge": "3. How old is your Hero?",
-  "labelStory": "4. What type of story would you like to read?",
-  "labelImage": "5. Upload an image (optional).",
-
-  "placeholderName": "Hero's name",
-  "placeholderAge": "Hero's age",
-  "placeholderStory": "Type of the story",
-  "radiobuttonHe": "he",
-  "radiobuttonShe": "she",
-  "radiobuttonIt": "it",
-  "placeholderCreate": "Create!",
-  "placeholderImage": "drag and drop your image here or browse"
-
-
-
-
+  "labelPicture": "5. Upload an image (optional)",
+  "picturePlaceholder": "Click or drag and drop",
+  "jpgPreview": "Test_JPG_152_KB.jpg",
+  "pngPreview": "Test_PNG_94_KB.png",
+  "imageError": "/static/error.86e8f937.png",
+  "buttonPlaceholder": "Create!",
+  "headerMLH": "My Little Hero",
+  "storyAge": "one hundred twenty three",
+  "headerStory": "Two Cats And A LadyBug",
+  "labelAge": "3. How old is your hero?",
+  "placeholderAge": "Hero's age"
 }

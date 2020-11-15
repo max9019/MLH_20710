@@ -1,7 +1,6 @@
 {
   "name": "MLH_20710",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "wdio wdio.conf.js"
@@ -11,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@wdio/allure-reporter": "^6.7.2",
-    "@wdio/cli": "^6.7.2",
+    "@wdio/cli": "^6.7.4",
     "@wdio/dot-reporter": "^6.7.0",
     "@wdio/local-runner": "^6.7.2",
     "@wdio/mocha-framework": "^6.7.0",
@@ -24,5 +23,17 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@babel/register": "^7.12.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max9019/MLH_20710.git"
+  },
+  "bugs": {
+    "url": "https://github.com/max9019/MLH_20710/issues"
+  },
+  "homepage": "https://github.com/max9019/MLH_20710#readme",
+  "description": ""
 }
