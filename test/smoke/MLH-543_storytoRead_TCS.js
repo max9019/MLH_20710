@@ -5,7 +5,7 @@ const inputValues5AndClick = require('../../helpers/inputValues5AndClick');
 const inputValues4AndClick = require('../../helpers/inputValues4AndClick');
 const storyAgeText = require('../../helpers/storyAgeText');
 
-describe('MLH-543 Page header is present and correct  ', function() {
+describe('MLH-543 Final Story Testing  ', function() {
 
     it('TCS-001 page header My little hero is present', function (){
         browser.url('');
