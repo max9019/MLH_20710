@@ -67,6 +67,14 @@ describe('MLH-543 Final Story Testing  ', function() {
         expect(tryAgainText).toEqual(true);
     });
 
+    it('TCS-011 try again refreshes the page', function (){
+        browser.url('');
+        inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
+        $(sel.tryAgain).waitForDisplayed();
+        $(sel.tryAgain).click();
+
+        expect().toEqual()
+    });
 
 
 })
