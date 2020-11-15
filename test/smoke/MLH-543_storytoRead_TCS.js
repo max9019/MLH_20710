@@ -52,14 +52,14 @@ describe('MLH-543 Final Story Testing  ', function() {
         expect(storyText).toStrictEqual(exp.moralComedyText);
     });
 
-    it('TCS-009 try again btn is displayed', function (){
+    xit('TCS-009 try again btn is displayed', function (){
         browser.url('');
         inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
         const tryAgainBtn = $(sel.tryAgain).waitForDisplayed();
         expect(tryAgainBtn).toEqual(true);
     });
 
-    it('TCS-010 try again has the title Try again!', function (){
+    xit('TCS-010 try again has the title Try again!', function (){
         browser.url('');
         inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
         const tryAgainBtn = $(sel.tryAgain).waitForDisplayed();
@@ -72,8 +72,9 @@ describe('MLH-543 Final Story Testing  ', function() {
         inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
         $(sel.tryAgain).waitForDisplayed();
         $(sel.tryAgain).click();
+        const theIntro = $(sel.theIntro).getAttribute('textContent');
+        console.log("iiii" + theIntro);
 
-        expect().toEqual()
     });
 
 

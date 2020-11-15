@@ -11,5 +11,6 @@
   "labelAge": "3. How old is your hero?",
   "placeholderAge": "Hero's age",
   "moralComedyText": "Moral: When you quarrel amongst yourselves, someone else gains from it.",
-  "tryAgainText": "Try again!"
+  "tryAgainText": "Try again!",
+  "theIntroText": "Let's create your own HERO! It's super easy with our application!"
 }
