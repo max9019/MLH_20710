@@ -17,6 +17,6 @@
   "headerStory": ".mb-4",
   "storyText": ".card-text",
   "theIntro": "p",
-  "whenGenderIsChosen": ".ant-radio-checked"
-
+  "whenGenderIsChosen": ".ant-radio-checked",
+  "uploadImage": ".anticon-plus"
 }

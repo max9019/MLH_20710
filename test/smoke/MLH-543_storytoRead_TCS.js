@@ -73,7 +73,17 @@ describe('MLH-543 Final Story Testing  ', function() {
         $(sel.tryAgain).waitForDisplayed();
         $(sel.tryAgain).click();
         const theIntroText = $(sel.theIntro).isDisplayed();
+        const name = $(sel.name).getAttribute('placeholder');
+        const genderIsChosen = $(sel.whenGenderIsChosen).isClickable();
+        const age = $(sel.age).getAttribute('placeholder');
+        const story = $(sel.story).getAttribute('outerText');
+        const uploadImage =$(sel.uploadImage).isDisplayed();
         expect(theIntroText).toEqual(true);
+        expect(name).toEqual(exp.placeholderName);
+        expect(genderIsChosen).toEqual(false);
+        expect(age).toEqual(exp.placeholderAge);
+        expect(story).toEqual(exp.placeholderStory);
+        expect(uploadImage).toEqual(true);
     });
 
 })
