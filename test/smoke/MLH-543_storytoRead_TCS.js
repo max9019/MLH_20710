@@ -17,7 +17,7 @@ describe('MLH-543 Final Story Testing  ', function() {
         const headerMLH = $(sel.headerMLH).getText();
         expect(headerMLH).toEqual(exp.headerMLH);
     });
-//TCS-003 unresolved yett
+//TCS-003 will be done manually
     it('TCS-004 uploaded image has size <=500px', function (){
         inputValues5AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
         const uploadedPictureSize = $(sel.uploadedPicture).getAttribute('width');
@@ -48,8 +48,42 @@ describe('MLH-543 Final Story Testing  ', function() {
     it('TCS-008 the moral is present in comedy', function (){
         browser.url('');
         inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
-        const storyText = $$(sel.storyText)[1].getAttribute('textContent');
-        expect(storyText).toStrictEqual(exp.moralComedyText);
+        const storyText = $$(sel.storyText)[1].getAttribute('textContent').length;
+        expect(storyText).toBeGreaterThan(0);
+    });
+
+    it('TCS-009 try again btn is displayed', function (){
+        browser.url('');
+        inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
+        const tryAgainBtn = $(sel.tryAgain).waitForDisplayed();
+        expect(tryAgainBtn).toEqual(true);
+    });
+
+    it('TCS-010 try again has the title Try again!', function (){
+        browser.url('');
+        inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
+        const tryAgainBtn = $(sel.tryAgain).waitForDisplayed();
+        const tryAgainText = $(sel.tryAgain).getAttribute('textContent')
+        expect(tryAgainText).toEqual(exp.tryAgainText);
+    });
+
+    it('TCS-011 try again refreshes the page', function (){
+        browser.url('');
+        inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
+        $(sel.tryAgain).waitForDisplayed();
+        $(sel.tryAgain).click();
+        const theIntroText = $(sel.theIntro).isDisplayed();
+        const name = $(sel.name).getAttribute('placeholder');
+        const genderIsChosen = $(sel.whenGenderIsChosen).isClickable();
+        const age = $(sel.age).getAttribute('placeholder');
+        const story = $(sel.story).getAttribute('outerText');
+        const uploadImage =$(sel.uploadImage).isDisplayed();
+        expect(theIntroText).toEqual(true);
+        expect(name).toEqual(exp.placeholderName);
+        expect(genderIsChosen).toEqual(false);
+        expect(age).toEqual(exp.placeholderAge);
+        expect(story).toEqual(exp.placeholderStory);
+        expect(uploadImage).toEqual(true);
     });
 
 })
