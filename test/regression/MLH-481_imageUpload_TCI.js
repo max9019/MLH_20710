@@ -78,7 +78,7 @@ describe('MLH-481 Testing Image Uploading Field - Regression', function () {
         expect(elem.length).toEqual(1);
     });
 
-    it('TCI-014 No image shown in the final story if no image uploaded', function () {
+    it('TCI-023 No image shown in the final story if no image uploaded', function () {
         browser.url('');
         inputValues4AndClick(data.name, data.gender.he, data.age, data.storyType.Comedy);
         const isExist = $(sel.uploadedPicture).isExisting();
