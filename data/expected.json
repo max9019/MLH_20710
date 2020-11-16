@@ -13,5 +13,7 @@
   "moralComedyText": "Moral: When you quarrel amongst yourselves, someone else gains from it.",
   "tryAgainText": "Try again!",
   "placeholderName": "Hero's name",
-  "placeholderStory": "Type of the story"
+  "placeholderStory": "Type of the story",
+  "theIntro": "Let's create your own HERO! It's super easy with our application!",
+  "title": "MLH trial"
   }
