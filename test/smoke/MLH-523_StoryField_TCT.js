@@ -3,8 +3,6 @@ const exp = require('../../data/expected.json');
 
  describe ('Story Field', function() {
 
-    describe ('Story Field', function(){
-
         it ('TCT-001 Label "4. What type of story would you like to read?" is present', function () {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
             const story = $$(sel.label)[3].isDisplayed();
@@ -21,6 +19,4 @@ const exp = require('../../data/expected.json');
             expect(story).toEqual(exp.placeholderStory);
         });
 
-
-    });
 });
