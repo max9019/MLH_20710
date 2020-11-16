@@ -16,5 +16,8 @@
   "placeholderStory": "Type of the story",
   "theIntro": "Let's create your own HERO! It's super easy with our application!",
   "title": "MLH trial",
-  "labelName": "1. What is your Hero's name?"
+  "labelName": "1. What is your Hero's name?",
+  "genderHe": "he",
+  "genderShe": "she",
+  "genderIt": "it"
 }
