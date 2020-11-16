@@ -18,5 +18,6 @@
   "storyText": ".card-text",
   "theIntro": "p",
   "whenGenderIsChosen": ".ant-radio-checked",
-  "uploadImage": ".anticon-plus"
+  "uploadImage": ".anticon-plus",
+  "storyPlaceholder": ".ant-select-selection-placeholder"
 }
