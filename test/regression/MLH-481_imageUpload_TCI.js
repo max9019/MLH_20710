@@ -1,9 +1,11 @@
-const sel = require('../../data/selectors.json');
+const sel = require('../../data/selectors.json')
+const data = require('../../data/testData.json');
 const uploadSmallJPGimage = require('../../helpers/uploadSmallJPGimage');
 const uploadSmallPNGimage = require('../../helpers/uploadSmallPNGimage');
 const uploadPDFFile = require('../../helpers/uploadPDFFile');
 const uploadTXTFile = require('../../helpers/uploadTXTFile');
 const uploadDOCfile = require('../../helpers/uploadDOCfile');
+const inputValues4AndClick = require('../../helpers/inputValues4AndClick');
 
 describe('MLH-481 Testing Image Uploading Field - Regression', function () {
 
@@ -75,5 +77,12 @@ describe('MLH-481 Testing Image Uploading Field - Regression', function () {
         const elem = $$(sel.imagePreview);
         expect(elem.length).toEqual(1);
     });
+
+    it('TCI-014 No image shown in the final story if no image uploaded', function () {
+        browser.url('');
+        inputValues4AndClick(data.name, data.gender.he, data.age, data.storyType.Comedy);
+        const isExist = $(sel.uploadedPicture).isExisting();
+        expect(isExist).toEqual(false);
+    })
 
 });
