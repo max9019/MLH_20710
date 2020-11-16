@@ -17,7 +17,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/regression/MLH-481_imageUpload_TCI.js'
+        './test/smoke/MLH-523_StoryField_TCT.js'
     ],
     // Patterns to exclude.
     exclude: [
