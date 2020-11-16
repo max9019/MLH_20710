@@ -45,4 +45,11 @@ describe('MLH-543 Final Story Testing  ', function() {
         expect(storyAgeText()).toEqual(exp.storyAge);
     });
 
+    it('TCS-008 the moral is present in comedy', function (){
+        browser.url('');
+        inputValues4AndClick(data.name,data.gender.she,data.age,data.storyType.Comedy);
+        const storyText = $$(sel.storyText)[1].getAttribute('textContent');
+        expect(storyText).toStrictEqual(exp.moralComedyText);
+    });
+
 })
