@@ -15,5 +15,8 @@
   "imagePreview": ".ant-upload-list-item-info",
   "headerMLH": ".hero__form h3",
   "headerStory": ".mb-4",
-  "storyText": ".card-text"
+  "storyText": ".card-text",
+  "theIntro": "p",
+  "whenGenderIsChosen": ".ant-radio-checked",
+  "uploadImage": ".anticon-plus"
 }
