@@ -32,7 +32,7 @@ describe ('Story Field functionality', function() {
         it ('TCT-007 Story Field doesnt accept typing', function () {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
             $(sel.storyClick).click();
-            const storyTypes = $$(sel.storyType)[0,1,2,3,4,5,6].isDisplayed();
+            const storyTypes = $(sel.storyPlaceholder).getText()
             expect(storyTypes).toEqual(true);
         });
 

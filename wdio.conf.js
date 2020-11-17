@@ -17,7 +17,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/smoke/MLH-523_StoryField_TCT.js'
+        './test/regression/MLH-522_StoryFieldFunctionality_TCT.js'
     ],
     // Patterns to exclude.
     exclude: [
