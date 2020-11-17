@@ -19,5 +19,6 @@
   "labelName": "1. What is your Hero's name?",
   "genderHe": "he",
   "genderShe": "she",
-  "genderIt": "it"
+  "genderIt": "it",
+  "typeOfStory": "Comedy"
 }
