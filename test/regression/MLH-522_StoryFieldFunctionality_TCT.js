@@ -22,17 +22,17 @@ describe ('Story Field functionality', function() {
             expect(showStory).toEqual(exp.typeOfStory);
         });
 
-        it ('TCT-006 Story contents', function () {
-            browser.url('https://qa-apps.netlify.app/app_my_hero');
+        it('TCT-006 Story contents', function () {
             $(sel.storyClick).click();
-            const storyTypes = $$(sel.storyType)[0,1,2,3,4,5,6].isDisplayed();
-            expect(storyTypes).toEqual(true);
+            browser.pause(1000);
+            const storyName = $$(sel.storyType)[0,1,2,3,4,5,6].isDisplayed();
+            expect(storyName).toEqual(true);
         });
 
         it ('TCT-007 Story Field doesnt accept typing', function () {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
             $(sel.storyClick).click();
-            const storyTypes = $(sel.storyPlaceholder).getText()
+            const storyTypes = $$(sel.storyType)[0,1,2,3,4,5,6].isDisplayed();
             expect(storyTypes).toEqual(true);
         });
 
