@@ -65,7 +65,6 @@ describe ('Story Types', function() {
             expect(showStory).toEqual(exp.typeOfStory6);
         });
 
-
         it('TCT-015 "Comedy" can be chosen and affect on the final result', function () {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
             inputValues4AndClick(data.name, data.gender.he, data.age, data.storyType.Comedy);
