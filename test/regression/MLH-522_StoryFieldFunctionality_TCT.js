@@ -4,8 +4,6 @@ const exp = require('../../data/expected.json');
 
 describe ('Story Field functionality', function() {
 
-    describe ('Story Field functionality', function(){
-
         it ('TCT-004 Story dropdown can choose any story', function () {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
             $(sel.storyClick).click();
@@ -29,26 +27,4 @@ describe ('Story Field functionality', function() {
             expect(storyTypes).toEqual(true);
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     });
-});
