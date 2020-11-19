@@ -1,11 +1,4 @@
 const sel = require('../../data/selectors.json')
-const data = require('../../data/testData.json');
-const uploadSmallJPGimage = require('../../helpers/uploadSmallJPGimage');
-const uploadSmallPNGimage = require('../../helpers/uploadSmallPNGimage');
-const uploadPDFFile = require('../../helpers/uploadPDFFile');
-const uploadTXTFile = require('../../helpers/uploadTXTFile');
-const uploadDOCfile = require('../../helpers/uploadDOCfile');
-const inputValues4AndClick = require('../../helpers/inputValues4AndClick');
 const symbols = require('../../data/testData.json').symbols;
 
 describe('MLH-615 Testing Name Field - Regression', function () {
@@ -21,7 +14,7 @@ describe('MLH-615 Testing Name Field - Regression', function () {
     it('TCN-005-1 Verify that a Input field not accepted more them 70 simbols & alert', function () {
         browser.url('');
         let nField = $(sel.name).setValue(symbols.moreThanNecessary);
-        browser.pause(400)
+        $(sel.alert).waitForDisplayed();
         const alert = $(sel.alert).isDisplayed();
         expect(alert).toEqual(true);
     });
