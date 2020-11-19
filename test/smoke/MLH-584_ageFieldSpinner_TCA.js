@@ -12,6 +12,7 @@ describe('MLH-584 field age tests to check spinners', function () {
     it('TCA-005 Verify that spinner Up is present.', function () {
         browser.url('');
         $(sel.age).moveTo();
+        $$(sel.spinner)[0].waitForDisplayed();
         const spinnerUp = $$(sel.spinner)[0].isDisplayed();
         expect(spinnerUp).toEqual(true);
     });
@@ -19,6 +20,7 @@ describe('MLH-584 field age tests to check spinners', function () {
     it('TCA-005 Verify that spinner Down is present.', function () {
         browser.url('');
         $$(sel.spinner)[1].moveTo();
+        $$(sel.spinner)[1].waitForDisplayed();
         const spinnerDown = $$(sel.spinner)[1].isDisplayed();
         expect(spinnerDown).toEqual(true);
     });
