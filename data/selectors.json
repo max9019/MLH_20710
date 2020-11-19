@@ -20,5 +20,6 @@
   "theIntro": "p",
   "whenGenderIsChosen": ".ant-radio-checked",
   "uploadImage": ".anticon-plus",
-  "storyPlaceholder": ".ant-select-selection-placeholder"
+  "storyPlaceholder": ".ant-select-selection-placeholder",
+  "spinner": ".ant-input-number-handler"
 }
