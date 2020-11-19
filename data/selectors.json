@@ -21,5 +21,7 @@
   "whenGenderIsChosen": ".ant-radio-checked",
   "uploadImage": ".anticon-plus",
   "storyPlaceholder": ".ant-select-selection-placeholder",
+  "storyTypes": ".ant-select-selection-item",
+  "storyName": ".mb-4",
   "spinner": ".ant-input-number-handler"
 }

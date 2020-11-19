@@ -20,5 +20,11 @@
   "genderHe": "he",
   "genderShe": "she",
   "genderIt": "it",
-  "typeOfStory": "Comedy"
+  "typeOfStory0": "Overcoming the Monster",
+  "typeOfStory1": "Rebirth",
+  "typeOfStory2": "Quest",
+  "typeOfStory3": "Journey and Return",
+  "typeOfStory4": "Rags and Riches",
+  "typeOfStory5": "Tragedy",
+  "typeOfStory6": "Comedy"
 }
