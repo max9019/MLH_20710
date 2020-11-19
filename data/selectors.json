@@ -17,6 +17,7 @@
   "headerMLH": ".hero__form h3",
   "headerStory": ".mb-4",
   "storyText": ".card-text",
+  "spinner": ".ant-input-number-handler",
   "theIntro": "p",
   "whenGenderIsChosen": ".ant-radio-checked",
   "uploadImage": ".anticon-plus",
