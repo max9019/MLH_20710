@@ -105,5 +105,4 @@ describe('MLH-615 Testing Name Field - Regression', function () {
         expect(nField).toEqual(symbols.space2);
     });
 
-
 });
