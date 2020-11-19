@@ -22,4 +22,7 @@
   "uploadImage": ".anticon-plus",
   "storyPlaceholder": ".ant-select-selection-placeholder",
   "alert": ".ant-form-item-explain"
+  "storyTypes": ".ant-select-selection-item",
+  "storyName": ".mb-4",
+  "spinner": ".ant-input-number-handler"
 }
