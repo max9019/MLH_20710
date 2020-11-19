@@ -22,5 +22,6 @@
   "uploadImage": ".anticon-plus",
   "storyPlaceholder": ".ant-select-selection-placeholder",
   "storyTypes": ".ant-select-selection-item",
-  "storyName": ".mb-4"
+  "storyName": ".mb-4",
+  "spinner": ".ant-input-number-handler"
 }
