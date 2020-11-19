@@ -14,6 +14,21 @@
     "Rags and Riches": 4,
     "Tragedy": 5,
     "Comedy": 6
+  },
+
+  "symbols": {
+    "moreThanNecessary": "Pneumonoultramicroscopicsilicovolcanoconiosis&Supercalifragilisticexpialidocious",
+    "allowed": "SupercalifragilisticexpialidociousHippopotomonstrosesquippedaliophobia",
+    "specialCharacters":"!@ #$%^&*()_+=-\":><?/{[}]~`\\|\"';",
+    "singleUppercase": "H",
+    "singleLowercase": "h",
+    "singleDigit": "5",
+    "uppercase": "ANYNAME",
+    "lowercase": "anyname",
+    "digit": "0123456789",
+    "space1": "   first name   ",
+    "space2": " ",
+    "space3": "any name"
   }
 
 }
