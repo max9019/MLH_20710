@@ -28,5 +28,27 @@ describe ('Story Field functionality', function() {
             const storyName = $$(sel.storyType)[0,1,2,3,4,5,6].isDisplayed();
             expect(storyName).toEqual(true);
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     });
 });

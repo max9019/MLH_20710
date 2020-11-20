@@ -17,8 +17,13 @@
   "headerMLH": ".hero__form h3",
   "headerStory": ".mb-4",
   "storyText": ".card-text",
+  "spinner": ".ant-input-number-handler",
   "theIntro": "p",
   "whenGenderIsChosen": ".ant-radio-checked",
   "uploadImage": ".anticon-plus",
-  "storyPlaceholder": ".ant-select-selection-placeholder"
+  "storyPlaceholder": ".ant-select-selection-placeholder",
+  "alert": ".ant-form-item-explain"
+  "storyTypes": ".ant-select-selection-item",
+  "storyName": ".mb-4",
+  "spinner": ".ant-input-number-handler"
 }
