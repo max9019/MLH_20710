@@ -18,7 +18,7 @@ exports.config = {
     //
     specs: [
         './test/smoke/*.js',
-        './test/regression/MLH-522_StoryFieldFunctionality_TCT.js'
+        './test/regression/*.js'
     ],
     // Patterns to exclude.
     exclude: [

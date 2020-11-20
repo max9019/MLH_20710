@@ -32,14 +32,14 @@ describe('MLH-484 Create Button - Smoke', function () {
     it('TCB-0011 Active when 4 fields filled', function () {
         browser.url('');
         inputValues4AndClick(data.name, data.gender.he, data.age, data.storyType.Comedy);
-        const tryAgainBtn = $(sel.tryAgain).isDisplayed();
+        const tryAgainBtn = $(sel.tryAgain).isClickable();
         expect(tryAgainBtn).toEqual(true);
     });
 
     it('TCB-0012 Active when 4 fields filled and image uploaded', function () {
         browser.url('');
         inputValues5AndClick(data.name, data.gender.he, data.age, data.storyType.Comedy);
-        const tryAgainBtn = $(sel.tryAgain).isDisplayed();
+        const tryAgainBtn = $(sel.tryAgain).isClickable();
         expect(tryAgainBtn).toEqual(true);
     });
 
