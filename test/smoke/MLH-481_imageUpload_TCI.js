@@ -45,7 +45,7 @@ describe('MLH-481 Testing Image Uploading Field - Smoke', function () {
         browser.url('');
         uploadSmallJPGimage();
         $(sel.imagePreviewDelete).moveTo();
-        browser.pause(1000);
+        $(sel.imagePreviewDelete).waitForClickable();
         const deletePreview = $(sel.imagePreviewDelete).isClickable();
         expect(deletePreview).toEqual(true);
     });
@@ -54,7 +54,7 @@ describe('MLH-481 Testing Image Uploading Field - Smoke', function () {
         browser.url('');
         uploadSmallPNGimage();
         $(sel.imagePreviewDelete).moveTo();
-        browser.pause(1000);
+        $(sel.imagePreviewDelete).waitForClickable();
         const deletePreview = $(sel.imagePreviewDelete).isClickable();
         expect(deletePreview).toEqual(true);
     });
